@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ServiceRegistry  # Sets the application name to 'ServiceRegistry'
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost  # Sets the hostname of the Eureka instance to 'localhost'
+
+  client:
+    register-with-eureka: false  # Prevents this application from registering itself with Eureka
+    fetch-registry: false  # Prevents this application from fetching registry information from Eureka
